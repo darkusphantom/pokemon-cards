@@ -1,3 +1,196 @@
-@import 'tailwindcss/dist/base.css';
-@import 'tailwindcss/dist/components.css';
-@import 'tailwindcss/dist/utilities.css';
+@import "tailwindcss/dist/base.css";
+@import "tailwindcss/dist/components.css";
+@import "tailwindcss/dist/utilities.css";
+
+body {
+  font-size: 18px;
+}
+
+.container-table {
+  display: grid;
+  place-items: center;
+  gap: 20px;
+  width: 90%;
+  margin: 25px auto;
+}
+
+.container-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.container-input input {
+  width: 30%;
+  border-bottom: 1px solid black;
+  text-align: center;
+  transition: width ease-in-out 0.25s;
+}
+
+.container-input input:focus {
+  width: 50%;
+  border-bottom: 1px solid black;
+}
+
+.table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  /* min-height: 60vh; */
+  padding: 45px;
+  border: 3px solid #000;
+  border-radius: 20px;
+  background: rgba(190, 68, 19, 0.558);
+  background: linear-gradient(349deg, rgba(190, 68, 19, 1), #ff000080);
+  box-shadow: 2px 4px 30px rgb(190 68 19 / 66%);
+}
+
+.btn {
+  padding: 12px 16px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px #000;
+}
+
+.btn:hover {
+  box-shadow: none;
+}
+
+.card-pokemon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 220px;
+  height: 240px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 12px;
+  background: rgb(69, 119, 255);
+  box-shadow: 0 2px 4px #4c4c4c;
+}
+
+.card-name {
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card-image {
+  width: 100%;
+  margin-bottom: 24px;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-types {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.type {
+  display: flex;
+  align-items: center;
+  padding: 0px 18px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  color: #fff;
+}
+
+.type-grass {
+  background: rgb(83, 187, 83);
+  background: linear-gradient(224deg, rgb(83, 187, 83), #0e8f17db);
+}
+
+.type-poison {
+  background: rgb(102, 0, 128);
+  background: linear-gradient(45deg, rgb(102, 0, 128), #10456a52);
+}
+
+.type-fire {
+  background: #ff1616;
+  background: linear-gradient(45deg, #ff1616, rgb(213 24 24 / 85%));
+}
+
+.type-flying {
+  background: #b8d3eb;
+  background: linear-gradient(167deg, #b8d3eb, transparent);
+}
+
+.type-normal {
+  background: #f0f8ff;
+  background: linear-gradient(289deg, #f0f8ff, #444444d1);
+}
+
+.type-water {
+  background: #0063ff;
+  background: linear-gradient(45deg, #0063ff, transparent);
+}
+
+.type-bug {
+  background: #398f39;
+  background: linear-gradient(228deg, #398f39, #0b5a1cb8);
+}
+
+.type-steel {
+  background: #838383;
+  background: linear-gradient(45deg, #838383, #3c3c3c47);
+}
+
+.type-psychic {
+  background: #f039f1;
+  background: linear-gradient(45deg, #f039f1, #bd1388f2);
+}
+
+.type-fairy {
+  background: #f039f1;
+  background: linear-gradient(45deg, #f039f1, #d4cfd547);
+}
+
+.type-ghost {
+  background: #2c19d4;
+  background: linear-gradient(45deg, #2c19d4, #6012c742);
+}
+
+.type-fighting {
+  background: #ab2f2f;
+  background: linear-gradient(45deg, #ab2f2f, #a71313b3);
+}
+
+.type-dragon {
+  background: #4d06bf;
+  background: linear-gradient(45deg, #4d06bf, #ff1313);
+}
+
+.type-ground {
+  background: #f1a739;
+  background: linear-gradient(45deg, #f1a739, #b8c54af2);
+}
+
+.type-rock {
+  background: #d16c05;
+  background: linear-gradient(234deg, #ab682fde, #d16c05);
+}
+
+.type-dark {
+  background: #000000de;
+  background: linear-gradient(13deg, #000000de, #4646469c);
+}
+
+.type-electric {
+  background: #efff00;
+  background: linear-gradient(186deg, #efff00, #7e870094);
+}
+
+.type-ice {
+  background: #00adff;
+  background: linear-gradient(45deg, #00adff, transparent);
+}
